@@ -1,0 +1,27 @@
+.navbar{
+    position: fixed;
+    width: 100%;
+    justify-content: space-around;
+    padding: 10px;
+    z-index: 9999999;
+    img{ 
+    width: 80px;
+    transition: .4s;
+    &:hover{
+        transform: scale(1.1);
+    }
+    }
+    .navbar-nav{
+        .nav-item{          
+            margin-left: 15px;
+            .nav-link{     
+                transition: .4s;
+                &:hover{
+                    color: $main-color;
+                    border-bottom: 1px solid $main-color;
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,113 @@
+.item1 { grid-area: photo1; }
+.item2 { grid-area: photo2; }
+.item3 { grid-area: photo3; }
+.item4 { grid-area: photo4; }
+.item5 { grid-area: photo5; }
+.item6 { grid-area: photo6; }
+
+#portfolio{
+    margin: 50px 0;
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+          'photo1  photo3  photo5'
+          'photo1  photo4  photo5'
+          'photo2  photo4  photo6';
+          column-gap: 0;  
+          .portfolio-image{
+              overflow: hidden;
+            img{
+                width: 100%;
+                object-fit: cover;
+                transition: .4s;
+            }
+          }   
+        
+        .portfolio-box{
+            position: relative;  
+            overflow: hidden;        
+            ::after{
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: $main-color;              
+                opacity: 0;   
+                transform: scale(1.2);    
+            }
+            &:hover{
+                .icons{
+                    opacity: 1;                 
+                 i{
+                     transform: scale(0.6);
+                     
+                 } 
+                 span{
+                     transform:scale(0.6);
+                 }  
+                }
+                ::after{
+                    opacity: .4;
+                }
+                img{
+                    transform: scale(1.2)
+                }
+            }
+            .icons{
+                @extend %content-position;
+                font-size: 30px;
+                opacity: 0;
+                transition: 1s;                           
+               i{
+                   border: 1px solid $dark-color;
+                   padding: 15px;
+                   margin-left: 10px;
+                   border-radius: 50%;
+                   font-size: 20px;
+                   transition: .4s;
+                   background-color: $primary-color;
+                   transform: scale(1.1);
+                  
+                 
+                  &:hover{
+                      background-color: $main-color;
+                  }
+               }
+                span{
+                    margin: 10px 0;
+                    display: block;
+                    transition: .4s;
+                    transform: scale(1.1);
+                }
+             
+            }
+        }
+    }
+    .content{
+        font-size: 20px;
+        h4{
+            margin-bottom: 100px;
+            color: $main-color;
+        }
+        p{
+            margin-bottom: 30px;
+        }
+        .spans{
+            margin-bottom: 30px;
+            span{
+                transition: .4s;
+                &:hover{                    
+                        cursor: pointer;
+                        color: $main-color;               
+                }
+            }
+        }     
+    }  
+    .btn{
+        margin:10% 40%;
+        width: 20%;
+        border-radius: 30%;
+    }
+}

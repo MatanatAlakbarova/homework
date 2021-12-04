@@ -1,0 +1,10 @@
+@import "./partials/extend/index";
+@import "./partials/mixin/index";
+@import "./partials/variable/index";
+@import "./partials/sections/index";
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}

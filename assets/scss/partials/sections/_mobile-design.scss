@@ -1,0 +1,38 @@
+#mobile-design{
+    margin: 100px 0;
+    .content{
+        span{
+            font-size: 20px;
+            color: $main-color;
+        }
+        h2{
+            font-size: $h2-size-50;
+        }
+    }
+    .content-text{
+        p{
+            color: $content-paragraph-color;
+        }
+    }
+    .box{
+        cursor: pointer;
+        i{
+            font-size: 40px;
+            color: $main-color;
+            transition: 1s;
+            margin-bottom: 25px;
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+        .text{
+            color: $content-paragraph-color;
+            span{
+                font-weight: bold;
+            }
+            p{
+                margin-top:25px;
+            }
+        }
+    }
+}

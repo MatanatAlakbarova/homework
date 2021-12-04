@@ -1,0 +1,58 @@
+#testimonial{
+    margin-bottom: 500px;
+    position: relative;
+    @include background-image-design;
+    background-image: url(/assets/img/testimonial-bg.jpg);
+    height: 80vh;
+    background-attachment: fixed;
+    .content{
+        position: absolute;
+        top: 50%;
+        right: 10%;
+        text-align: center;
+        text-align: end;
+        color: $primary-color;
+        span{
+            font-size: 20px;
+        }
+        h2{
+            font-size: $h2-size-50;
+        }
+    }
+    .bottom{
+       .photo{
+           overflow: hidden;
+           padding: 30px;
+           transform: translateY(650px);
+           
+        img{
+            width: 40%;
+            border: 1px solid none;
+            border-radius: 50%;
+            transition: .4s;
+           
+            &:hover{
+                transform: scale(1.2)
+            }
+        }
+       }
+       .photo-name{
+        transform: translateY(700px);
+        cursor: pointer;
+        .john{
+            color: $main-color;
+            margin-left:35px ;
+        }
+    }
+       .content{
+        transform: translateY(500px);
+        color: $gray-black-color;
+        font-size: 20px;
+       }
+
+    }
+    .logos{
+        position: absolute;
+        top: 150%;
+    }
+}

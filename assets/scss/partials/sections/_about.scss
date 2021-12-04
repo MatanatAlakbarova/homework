@@ -1,0 +1,27 @@
+#about{
+    padding: 100px;
+    transition: 1s;
+    transform: translateY(100px);
+    img{
+        width: 100%;
+    }
+    .btn{
+        border-radius: 30%;
+        transition: 1s;
+        &:hover{
+            background-image: linear-gradient(to left, #2064b6 10%, #23ced5 51%, #2064b6 100%);
+
+        }
+    }
+    .about-content{
+        p{
+            color: $content-paragraph-color;
+        }
+    }
+    .about-content-h{
+        font-size: $h2-size-50;
+        span{
+            color: $main-color;
+        }
+    }
+}

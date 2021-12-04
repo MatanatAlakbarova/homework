@@ -1,0 +1,92 @@
+#offers{
+    background-color: $bg-color;
+    margin: 100px 0;
+    padding: 100px 0;
+   .offers-content{
+    span{
+        color: $main-color; 
+        font-size: 20px;      
+    }
+    h2{
+        font-size: $h2-size-50;
+        margin: 25px 0;
+    }
+    a{
+        color: $content-paragraph-color;
+        border:1px solid none;
+        border-radius: 30%;
+        padding: 10px 100px;
+        font-size: 25px;
+        transition: 1s;
+        &:hover{
+            background-image: linear-gradient(to left, #2064b6 10%, #23ced5 51%, #2064b6 100%);
+            color: $primary-color;
+            
+        }
+    }
+   }
+   .offers-box{
+       margin: 100px 0;
+       padding: 50px 50px;
+       height: 80vh;
+       border: 1px solid $gray-black-color;
+       transition: 1s;
+       &:hover{
+           background-color: $gray-black-color;
+           .top {
+            span{
+                color: $primary-color;
+            }
+            hr{
+                color: $primary-color;
+            }
+           }
+           .middle{
+               span{
+                   color: $primary-color;
+               }
+               hr{
+                color: $primary-color;
+            }
+           }
+           .bottom{
+            ul li i{
+               color: $primary-color; 
+            }
+            .btn{
+                background-color: $gray-black-color;
+                border: 1px solid $primary-color;
+            }
+        }
+       }
+       .top{
+           h4{
+               font-size: 40px;
+               color: $primary-color;
+               transition: 1s;
+           }
+           span{
+               font-size: 20px;
+           }
+       }
+       .middle{
+           span.price{
+               font-size: $h2-size-50;
+           }
+       }
+       .bottom{
+        ul li {
+            i{
+                margin-top: 30px;
+                transition: 1s;
+            }
+        }
+        .btn{
+            margin:30px 50px;
+            width: 80%;
+            border-radius: 30%;
+        }
+    }
+   }
+   
+}

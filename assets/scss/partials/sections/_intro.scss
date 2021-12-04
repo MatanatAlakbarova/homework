@@ -1,0 +1,38 @@
+#intro{
+    @include background-image-design;
+    position: relative;
+    text-align: center; 
+    .intro-content{
+        position: absolute;
+        top: 50%;
+        color: $primary-color;
+        .intro-h{
+            font-size: $h1-size;
+            font-weight: 100;
+        }
+    }
+    .box{
+        height: 200px;
+        padding: 25px;
+        transform: translateY(800px);
+        background-color:$gray-black-color ;
+        color: $primary-color;
+        align-items: center;
+        transition: 1s;
+        i{
+            font-size: 35px;
+            transition: 1s;
+        }
+        &:hover{
+             background-image: linear-gradient(to left, #2064b6 10%, #23ced5 51%, #2064b6 100%);
+            i{
+                transform: scale(1.2);
+            }
+        }
+    }
+    .box-second{
+        background-image: linear-gradient(to right, #3883df 0%, #23ced5 51%, #5192e1 100%);
+       transform: translateY(780px);
+       height: 220px;
+    }
+}

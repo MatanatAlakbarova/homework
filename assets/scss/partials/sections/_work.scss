@@ -1,0 +1,44 @@
+#work{
+    margin: 20px 0;
+    padding: 60px;
+    background-color: $gray-black-color;
+    color: $primary-color;
+    .top{
+        margin-bottom: 50px;
+        span{
+            font-size: 20px;
+        }
+        h2{
+            font-size: $h2-size-50;
+        }
+    }
+    .box{
+        transition: 4s;
+        h6{
+            font-size: $h6-size-50;
+            border: 1px solid $primary-color;
+            border-radius: 100%;
+            text-align: center;
+            padding: 50px 0;
+            color: $primary-color;
+            transform: scale(0.7);
+        }
+        &:hover{
+            h6{
+            background-image: linear-gradient(to left, #2064b6 10%, #23ced5 51%, #2064b6 100%);
+        }
+            }
+        span{
+            color: $primary-color;
+        }
+        p{
+            color: $primary-color;
+        }
+        hr{
+            height: 3px;
+            color: $primary-color;
+        }
+    }
+       
+    
+}
